@@ -1,6 +1,7 @@
 {
   "name": "quartett-generator",
   "version": "1.0.0",
+  "homepage": "https://example.github.io/Quartett_Generator",
   "private": true,
   "dependencies": {
     "react": "^18.2.0",
@@ -10,12 +11,17 @@
     "jszip": "^3.10.1"
   },
   "devDependencies": {
-    "react-scripts": "5.0.1"
+    "react-scripts": "5.0.1",
+    "gh-pages": "^6.0.0",
+    "@testing-library/react": "^14.0.0",
+    "@testing-library/jest-dom": "^6.0.0"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test",
+    "test": "react-scripts test --env=jsdom",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "eject": "react-scripts eject"
   }
 }

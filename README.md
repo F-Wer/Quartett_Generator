@@ -19,10 +19,17 @@ Quartet Card Game Generator is an offline-first web app for designing your own q
    This opens the app at `http://localhost:3000`.
 2. Edit the game title, add categories and cards, and upload images. All changes are saved in your browser's local storage.
 3. When finished, choose **Export PDF** to get a printable PDF or **Export ZIP** for high quality JPEGs of every card front and back.
-4. Update `package.json`'s `homepage` with your GitHub username, then run:
-   ```bash
-   npm run deploy
-   ```
+4. Update `package.json`'s `homepage` with your GitHub username. To publish the
+   app on GitHub Pages you can use either approach:
+   - **gh-pages branch**
+     ```bash
+     npm run deploy
+     ```
+   - **`/docs` folder on `main`**
+     ```bash
+     npm run deploy-main
+     ```
+     Set GitHub Pages to use the `docs` folder on the `main` branch.
    Then open `https://<your-gh-username>.github.io/Quartett_Generator`.
 
 Clearing your browser storage resets the app to its defaults.

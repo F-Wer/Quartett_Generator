@@ -1,36 +1,36 @@
 # Quartet Card Game Generator
 
-Quartet Card Game Generator is an offline-first web app for designing your own quartet-style card games. Everything runs completely in your browser using React and TailwindCSS—no backend required and no data ever leaves your device.
+Quartet Card Game Generator is an offline-first React app for designing your own quartet-style card games. It runs entirely in your browser using TailwindCSS for styling.
 
 ## Features
 - **Fully offline** &mdash; data and images are stored in your browser
-- **Customizable game settings**: set a title, create as many categories as you like and choose the number of cards
-- **Flexible card editor** with image uploads and live preview
-- **Card back design**: upload an image or generate a colored background with custom text
+- **Customizable** &mdash; choose game title, categories and card count
+- **Flexible editor** with image uploads and instant preview
+- **Card back design** via image upload or colored text background
 - **Responsive layout** for mobile and desktop
-- **Export options**: print-ready PDF or a ZIP archive with all card images
+- **Export options**: print-ready PDF or ZIP archive of card images
 
 ## Usage
-1. Install dependencies and start the development server:
+1. Install dependencies and start the development server
    ```bash
    npm install
    npm start
    ```
-   This opens the app at `http://localhost:3000`.
-2. Edit the game title, add categories and cards, and upload images. All changes are saved in your browser's local storage.
-3. When finished, choose **Export PDF** to get a printable PDF or **Export ZIP** for high quality JPEGs of every card front and back.
-4. Update `package.json`'s `homepage` with your GitHub username, then run:
+   Visit `http://localhost:3000` to use the app.
+2. Edit the game title, create categories and cards, and upload images. Changes are saved locally in your browser.
+3. Use **Export PDF** for printable pages or **Export ZIP** for high-quality images.
+4. To publish online, set your GitHub username in the `homepage` field of `package.json` and run:
    ```bash
    npm run deploy
    ```
-   Then open `https://<your-gh-username>.github.io/Quartett_Generator`.
+   This builds the app and pushes the result to a `gh-pages` branch (created automatically if it doesn't exist). Your game will then be available at `https://<username>.github.io/Quartett_Generator`.
 
-Clearing your browser storage resets the app to its defaults.
+Clear your browser storage to reset the app to its defaults.
 
 ## Development
 This project uses the standard `react-scripts` workflow.
 
-- `npm test` runs the Jest test suite once.
-- `npm run build` creates a production build in the `build` folder.
+- `npm test` runs the Jest tests once.
+- `npm run build` creates a production build in `build/`.
 
-Every push to `main` or `master` triggers a GitHub Action that installs dependencies, runs the tests and builds the app.
+Each push to `main` or `master` triggers a GitHub Action that installs dependencies, runs tests and builds the app.

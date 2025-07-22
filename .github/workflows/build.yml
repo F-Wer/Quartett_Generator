@@ -17,6 +17,6 @@ jobs:
         cache: 'npm'
     - run: npm install
     - run: npm test -- --watchAll=false
-    - run: npm run deploy-main
+    - run: npm run build
       env:
         CI: true

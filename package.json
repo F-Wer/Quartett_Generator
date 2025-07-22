@@ -1,7 +1,7 @@
 {
   "name": "quartett-generator",
   "version": "1.0.0",
-  "homepage": "https://example.github.io/Quartett_Generator",
+  "homepage": "https://f-wer.github.io/Quartett_Generator",
   "private": true,
   "dependencies": {
     "react": "^18.2.0",

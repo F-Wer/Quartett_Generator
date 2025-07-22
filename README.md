@@ -35,3 +35,4 @@ This project uses the standard `react-scripts` workflow.
 
 Every push to `main` or `master` triggers a GitHub Action that installs dependencies, runs the tests and builds the app.
 
+All data remains on your device. No backend, no tracking, no cloud—your creations are 

@@ -54,3 +54,7 @@ Privacy
 All data remains on your device. No backend, no tracking, no cloud—your creations are yours only.
 
 Build and play your own Quartet game — completely offline and privacy-friendly!
+
+## Development
+
+This repository now follows a standard React structure. Install dependencies with `npm install` and run the development server using `npm start`.

@@ -1,56 +1,36 @@
-Quartet Card Game Generator is a modern, fully offline-capable web application built with React and TailwindCSS. The app allows you to create, customize, and export your own quartet-style card games directly in the browser—no backend, no data leaves your device.
-Features
+# Quartet Card Game Generator
 
-    Fully Offline: All data and images are stored locally in your browser (LocalStorage).
+Quartet Card Game Generator is an offline-first React app for designing your own quartet-style card games. It runs entirely in your browser using TailwindCSS for styling.
 
-    Customizable Game Settings:
+## Features
+- **Fully offline** &mdash; data and images are stored in your browser
+- **Customizable** &mdash; choose game title, categories and card count
+- **Flexible editor** with image uploads and instant preview
+- **Card back design** via image upload or colored text background
+- **Responsive layout** for mobile and desktop
+- **Export options**: print-ready PDF or ZIP archive of card images
 
-        Set your own game title
+## Usage
+1. Install dependencies and start the development server
+   ```bash
+   npm install
+   npm start
+   ```
+   Visit `http://localhost:3000` to use the app.
+2. Edit the game title, create categories and cards, and upload images. Changes are saved locally in your browser.
+3. Use **Export PDF** for printable pages or **Export ZIP** for high-quality images.
+4. To publish online, set your GitHub username in the `homepage` field of `package.json` and run:
+   ```bash
+   npm run deploy
+   ```
+   This builds the app and pushes the result to a `gh-pages` branch (created automatically if it doesn't exist). Your game will then be available at `https://<username>.github.io/Quartett_Generator`.
 
-        Add, rename, and remove any number of categories (e.g., “Goals”, “Height”, “Price”)
+Clear your browser storage to reset the app to its defaults.
 
-        Choose the number of cards in your game
+## Development
+This project uses the standard `react-scripts` workflow.
 
-    Flexible Card Editing:
+- `npm test` runs the Jest tests once.
+- `npm run build` creates a production build in `build/`.
 
-        Edit card titles and category values
-
-        Upload a unique image for each card (stored locally)
-
-        Intuitive card editing with live preview
-
-    Card Back Design:
-
-        Upload your own card back image
-
-        Or generate a card back using a color picker, gradient, and custom text
-
-    Responsive Layout:
-
-        Cards are automatically sized and arranged for both desktop and mobile
-
-        Dynamic card layouts adapt based on the number of categories
-
-    Export Options:
-
-        Export your game as a PDF (ready for double-sided printing, with crop marks)
-
-        Or as a ZIP archive containing high-quality JPEGs of each card front and back
-
-Tech Stack
-
-    React
-
-    TailwindCSS
-
-    jsPDF & html2canvas for PDF export
-
-    JSZip for ZIP export
-
-    uuid for unique IDs
-
-Privacy
-
-All data remains on your device. No backend, no tracking, no cloud—your creations are yours only.
-
-Build and play your own Quartet game — completely offline and privacy-friendly!
+Each push to `main` or `master` triggers a GitHub Action that installs dependencies, runs tests and builds the app.

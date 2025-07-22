@@ -54,3 +54,20 @@ Privacy
 All data remains on your device. No backend, no tracking, no cloud—your creations are yours only.
 
 Build and play your own Quartet game — completely offline and privacy-friendly!
+
+## Development
+
+1. Install dependencies (Node >=18 required):
+   ```bash
+   npm install
+   ```
+2. Start the development server:
+   ```bash
+   npm run dev
+   ```
+3. Build for production:
+   ```bash
+   npm run build
+   ```
+
+The app works completely offline and stores data in your browser's LocalStorage.
